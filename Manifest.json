@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Bitacora by:jf ",
+	"description": "Bitacora scrips para la mejora en la gestion de datos en eta direct y motivos ",
+	"version": "1.0",
+	"browser_action": {
+		"default_popup": "sources/html/Informacion.html"
+
+	},
+	"content_scripts": [
+	{
+		"matches": [
+			"https://www.facebook.com/*"
+		],
+		"js": [ 
+				"sources/main.js"
+			 ]
+	}
+	]
+}
